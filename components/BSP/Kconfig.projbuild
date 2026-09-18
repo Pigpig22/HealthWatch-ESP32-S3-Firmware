@@ -1,0 +1,17 @@
+menu "HealthWatch configuration"
+
+config HEALTHWATCH_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+    help
+        SSID used for NTP time synchronization. The value is stored in the
+        local sdkconfig file, which is ignored by Git.
+
+config HEALTHWATCH_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+    help
+        Password used for NTP time synchronization. Never commit real
+        credentials to the repository.
+
+endmenu

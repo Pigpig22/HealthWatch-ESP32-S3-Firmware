@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全问题
+    url: https://github.com/Pigpig22/ESP32/security
+    about: 凭据、隐私和安全漏洞请优先使用私密渠道报告

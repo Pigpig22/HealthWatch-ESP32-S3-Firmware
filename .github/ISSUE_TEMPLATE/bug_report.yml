@@ -1,0 +1,52 @@
+name: Bug 报告
+description: 报告可复现的固件、传感器或构建问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请勿粘贴 Wi-Fi 密码、令牌或个人健康数据。
+  - type: input
+    id: board
+    attributes:
+      label: 开发板与芯片
+      placeholder: 例如 ESP32-S3-N16R8
+    validations:
+      required: true
+  - type: input
+    id: idf
+    attributes:
+      label: ESP-IDF 版本
+      placeholder: 例如 v5.4.0
+    validations:
+      required: true
+  - type: textarea
+    id: wiring
+    attributes:
+      label: 模块与接线
+      description: 列出相关传感器、引脚和供电方式。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 执行……
+        2. 烧录……
+        3. 观察到……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏后的日志
+      description: 请删除 Wi-Fi、设备地址和个人数据。
+      render: shell

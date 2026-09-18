@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "includePath": [],
+            "defines": [],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "espressif.esp-idf-extension"
+        }
+    ],
+    "version": 4
+}
